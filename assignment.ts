@@ -13,6 +13,10 @@ function filterByRating(items: Book[]): Book[] {
   return filteredBooks;
 }
 
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  return arrays.flat();
+}
+
 class Vehicle {
   private make: string;
   private year: number;
